@@ -6,7 +6,7 @@ from flask import Flask, render_template
 
 
 class Config:
-    """Represents a Flask Babel configuration.
+    """Represents a Flask Babel configuration
     """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
@@ -21,7 +21,7 @@ babel = Babel(app)
 
 @app.route('/')
 def get_index() -> str:
-    """The home/index page.
+    """The home/index page
     """
     return render_template('1-index.html')
 
